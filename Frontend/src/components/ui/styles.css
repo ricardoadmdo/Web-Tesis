@@ -1,0 +1,43 @@
+.loader {
+	width: 250px;
+	padding: 20px;
+	aspect-ratio: 1;
+	border-radius: 70%;
+	background: #575ae6;
+	--_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+	-webkit-mask: var(--_m);
+	mask: var(--_m);
+	-webkit-mask-composite: source-out;
+	mask-composite: subtract;
+	animation: spinner-c7wet2 1s infinite linear;
+}
+@keyframes spinner-c7wet2 {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.offcanvas-end {
+	width: 75%; /* Ancho del offcanvas */
+}
+
+@media (min-width: 768px) {
+	.offcanvas-end {
+		width: 30%; /* Ancho del offcanvas en pantallas más grandes */
+	}
+}
+
+.animated-number-container {
+	display: inline-block; /* Asegura que el contenedor se muestre en línea */
+}
+
+/* TableSkeleton.css */
+.table-skeleton {
+	border-collapse: collapse; /* Colapsar bordes de la tabla para líneas claras */
+}
+
+.table-skeleton th,
+.table-skeleton td {
+	border: 1px solid rgba(0, 0, 0, 0.1); /* Color y grosor de las líneas de las celdas */
+	padding: 10px; /* Añadir padding para espacio alrededor del contenido */
+}

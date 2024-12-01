@@ -1,0 +1,41 @@
+/* Estilos de la animación BounceIn General, para hacerla mas rápida  */
+
+/* styles.css */
+body.no-scroll {
+	overflow: hidden;
+}
+
+.card {
+	transition: transform 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+/* Sobrescribe la duración de la animación */
+.fadeIn {
+	animation-duration: 0.1s !important; /* Ajusta este valor para hacer la animación más rápida */
+}
+
+/* CSS PARA LOS TOAST */
+.custom-toast {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.custom-toast.fade-in {
+	opacity: 1;
+}
+
+.custom-toast.fade-out {
+	opacity: 0;
+}
+
+.custom-toast .toast-body {
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}

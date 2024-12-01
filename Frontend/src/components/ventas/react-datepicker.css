@@ -1,0 +1,46 @@
+/* Cambiar color del contenedor principal */
+.react-datepicker {
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+}
+
+/* Cambiar el color de los días seleccionados */
+.react-datepicker__day--selected {
+	background-color: #007bff;
+	color: white;
+}
+
+/* Cambiar estilo de los días cuando el cursor pasa sobre ellos */
+.react-datepicker__day:hover {
+	background-color: #d4eaff;
+}
+
+/* Personalizar la cabecera */
+.react-datepicker__header {
+	background-color: #007bff;
+	color: white;
+	border-bottom: none;
+	border-radius: 10px 10px 0 0;
+}
+
+/* Cambiar estilo del mes */
+.react-datepicker__current-month {
+	font-weight: bold;
+	color: #fff;
+}
+
+/* Cambiar color de los días del fin de semana */
+.react-datepicker__day--weekend {
+	color: #ff4d4d;
+}
+
+/* Estilizar botones de navegación */
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+	border: none;
+	background-color: #007bff;
+	color: white;
+	border-radius: 50%;
+	padding: 5px;
+}

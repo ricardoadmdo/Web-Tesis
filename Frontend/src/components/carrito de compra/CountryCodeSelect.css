@@ -1,0 +1,18 @@
+.custom-phone-input-container {
+	display: flex;
+	align-items: center;
+	width: 30%;
+}
+
+.custom-phone-input-container .react-tel-input {
+	flex: 1;
+}
+
+.custom-phone-input-container .react-tel-input .form-control {
+	width: 100%;
+}
+
+.custom-phone-input-container .react-tel-input .flag-dropdown {
+	margin-right: 0;
+	padding-right: 0;
+}

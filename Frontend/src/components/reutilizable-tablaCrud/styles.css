@@ -1,0 +1,111 @@
+.calendar {
+	background: rgba(255, 255, 255, 0.9); /* Fondo ligeramente opaco */
+	border-radius: 10px;
+	overflow: hidden;
+	z-index: 1; /* Z-index hacia atrás */
+}
+
+.calendar-left {
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.calendar-left h3,
+.calendar-left p {
+	margin: 0;
+}
+
+.calendar-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.calendar-header h3 {
+	margin: 0;
+}
+
+.calendar-header button {
+	background: rgba(0, 123, 255, 0.1);
+	border: none;
+	color: #000000;
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 16px;
+}
+
+.calendar-header button:hover {
+	background: rgba(0, 123, 255, 0.2);
+}
+
+.table-responsive {
+	padding: 20px;
+}
+
+.calendar .table thead th {
+	border: none;
+	padding: 10px;
+	font-weight: 700;
+	color: #333;
+}
+
+.calendar .table tbody td {
+	width: 40px;
+	height: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	border: none; /* Eliminar bordes */
+}
+
+.calendar .table tbody .selected {
+	border-radius: 50%; /* Hacer la selección redonda */
+	background-color: #007bff; /* Color azul */
+	color: white;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Añadir sombra para resaltar */
+}
+
+.calendar .table tbody .today {
+	border-radius: 50%; /* Hacer la selección redonda */
+	background-color: #d63593; /* Color verde */
+	color: white;
+	box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Añadir sombra para resaltar */
+}
+
+.calendar .table tbody .selected:hover {
+	background-color: #0056b3; /* Color azul más oscuro para el hover */
+}
+
+.calendar .table tbody .today:hover {
+	background-color: #e881bd; /* Color verde más oscuro para el hover */
+}
+
+.calendar .table tbody td:not(.selected):not(.today):hover {
+	background-color: #e9ecef; /* Cambiar el color de fondo al hacer hover */
+}
+
+.calendar .table tbody td:hover {
+	border-radius: 50%; /* Hacer la celda redonda */
+}
+
+.dropzone-content {
+	padding: 1rem;
+	min-height: 16rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 2px dashed #d4dce6;
+	border-radius: 1rem;
+}
+
+.dropzone-content:hover {
+	background: #f2f7fe;
+}
